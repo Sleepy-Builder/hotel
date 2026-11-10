@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EaseStay Luxury Hotel & Resort - Accessible luxury, oceanfront suites, gourmet dining, and personalized hospitality.">
+  <title>EaseStay | Luxury Hotel & Resort</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="navigation-menu">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo-brand">
+        <img src="logo.png" alt="EaseStay Logo">
+        <div class="brand-text">EASE<span>STAY</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#rooms" class="nav-link">Rooms & Suites</a></li>
+          <li><a href="#amenities" class="nav-link">Amenities</a></li>
+          <li><a href="#restaurant" class="nav-link">Dining</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#booking" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.82rem;">Book Stay</a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img src="home1.jpg" alt="EaseStay Luxury Resort" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="hero-tag"><i class="fas fa-crown"></i> 5-Star Seaside Sanctuary</span>
+            <h1>Where Elegance Meets Effortless Comfort</h1>
+            <p>Experience world-class hospitality tailored for every traveler. From universally accessible suites and serene wellness sanctuaries to Michelin-inspired oceanfront dining, your unforgettable journey starts at EaseStay.</p>
+            <div class="hero-cta">
+              <a href="#booking" class="btn btn-primary">Check Availability <i class="fas fa-arrow-right"></i></a>
+              <a href="#rooms" class="btn btn-outline">Explore Rooms</a>
+            </div>
+          </div>
+
+          <div class="hero-gallery-preview">
+            <span class="hero-thumb-label"><i class="fas fa-camera"></i> Quick Views</span>
+            <div class="hero-thumbs-row">
+              <div class="hero-thumb active" title="Oceanfront Pool"><img src="home1.jpg" alt="Pool View"></div>
+              <div class="hero-thumb" title="Luxury Suite"><img src="home2.jpg" alt="Suite View"></div>
+              <div class="hero-thumb" title="Evening Lounge"><img src="home3.jpg" alt="Lounge View"></div>
+              <div class="hero-thumb" title="Tropical Gardens"><img src="home4.jpg" alt="Gardens View"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Booking Engine Bar -->
+    <section class="booking-section" id="booking">
+      <div class="container">
+        <div class="booking-card">
+          <form id="bookingForm" class="booking-grid">
+            <div class="booking-field">
+              <label for="checkin"><i class="far fa-calendar-alt"></i> Check-in</label>
+              <input type="date" id="checkin" required>
+            </div>
+
+            <div class="booking-field">
+              <label for="checkout"><i class="far fa-calendar-check"></i> Check-out</label>
+              <input type="date" id="checkout" required>
+            </div>
+
+            <div class="booking-field">
+              <label for="roomType"><i class="fas fa-bed"></i> Room Type</label>
+              <select id="roomType">
+                <option value="room-1">Superior Double Room ($149/nt)</option>
+                <option value="room-2">Executive Garden Suite ($239/nt)</option>
+                <option value="room-3">Presidential Ocean Suite ($389/nt)</option>
+                <option value="room-4">Deluxe Oceanfront Villa ($499/nt)</option>
+                <option value="room-5">Honeymoon Garden Sanctuary ($289/nt)</option>
+                <option value="room-6">Penthouse Sky Terrace ($599/nt)</option>
+              </select>
+            </div>
+
+            <div class="booking-field">
+              <label for="adults"><i class="fas fa-user-friends"></i> Adults</label>
+              <input type="number" id="adults" min="1" max="6" value="2">
+            </div>
+
+            <div class="booking-field">
+              <label for="children"><i class="fas fa-child"></i> Kids</label>
+              <input type="number" id="children" min="0" max="4" value="0">
+            </div>
+
+            <div class="booking-btn-wrap">
+              <button type="submit" class="btn btn-primary booking-submit-btn">
+                <i class="fas fa-search"></i> Reserve Now
+              </button>
+            </div>
+          </form>
+
+          <div class="booking-reassurance-bar">
+            <span><i class="fas fa-shield-check"></i> Best Rate Guaranteed</span>
+            <span><i class="fas fa-calendar-times"></i> Free Cancellation up to 48h</span>
+            <span><i class="fas fa-hand-holding-usd"></i> Pay at Hotel &bull; No Deposit Needed</span>
+            <span><i class="fas fa-wheelchair"></i> Universal Accessibility Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-images">
+            <img src="a1.jpg" alt="EaseStay Exterior Architecture" class="about-img-primary">
+            <img src="a2.jpg" alt="EaseStay Luxury Living" class="about-img-secondary">
+            <div class="about-badge">
+              <strong>15+</strong>
+              <span>Years of Hospitality</span>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <span class="section-subtitle">Raising Comfort to the Highest Level</span>
+            <h2 class="section-title">Welcome to EaseStay Luxury Resort & Spa</h2>
+            <p>Perched between sun-drenched coastlines and tropical gardens, EaseStay is meticulously designed for travelers who appreciate refined luxury, effortless convenience, and genuine warmth.</p>
+            <p>We take pride in our universal accessibility commitments — providing step-free architectural flows, adaptive suite configurations, and sensory accommodations so every guest feels completely at home.</p>
+
+            <div class="about-features">
+              <div class="about-feature-item">
+                <i class="fas fa-award"></i>
+                <div>
+                  <h4>Award-Winning Service</h4>
+                  <p>Recognized globally for bespoke concierge and guest care.</p>
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <i class="fas fa-universal-access"></i>
+                <div>
+                  <h4>Seamless Accessibility</h4>
+                  <p>Certified adaptive suites, ramps, and sensory options.</p>
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <i class="fas fa-cocktail"></i>
+                <div>
+                  <h4>Fine Dining & Bar</h4>
+                  <p>Four world-class culinary venues helmed by master chefs.</p>
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                  <h4>Guaranteed Best Rates</h4>
+                  <p>Direct bookings include free breakfast and flexible cancellation.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#rooms" class="btn btn-outline-gold">Discover Our Suites <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section section-padding" id="amenities">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Curated Experiences</span>
+          <h2 class="section-title">Resort Amenities & Facilities</h2>
+          <p class="section-desc">Indulge in tailored leisure activities designed to elevate mind, body, and spirit throughout your stay.</p>
+        </div>
+
+        <div class="amenities-grid">
+          <div class="amenity-card">
+            <div class="amenity-icon-wrap"><i class="fas fa-swimming-pool"></i></div>
+            <h3>Infinity Swimming Pool</h3>
+            <p>Temperature-controlled saltwater pool featuring private cabanas and cocktail service.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-wrap"><i class="fas fa-dumbbell"></i></div>
+            <h3>Gym & Yoga Pavilion</h3>
+            <p>State-of-the-art TechnoGym equipment and daily sunrise yoga classes overlooking the ocean.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-wrap"><i class="fas fa-spa"></i></div>
+            <h3>Thalasso Spa & Wellness</h3>
+            <p>Full-spectrum restorative treatments, hydrotherapy mineral baths, and signature massages.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-wrap"><i class="fas fa-ship"></i></div>
+            <h3>Private Yacht Tours</h3>
+            <p>Chartered island-hopping excursions, sunset cruises, and dolphin watching expeditions.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-wrap"><i class="fas fa-swimmer"></i></div>
+            <h3>Surfing Academy</h3>
+            <p>Personalized coaching for all skill levels led by certified ISA surf professionals.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-wrap"><i class="fas fa-microphone"></i></div>
+            <h3>Executive Conference Center</h3>
+            <p>High-tech hybrid meeting rooms, keynote amphitheater, and banquet spaces.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-wrap"><i class="fas fa-water"></i></div>
+            <h3>Diving & Snorkeling</h3>
+            <p>Guided coral reef explorations and PADI diving certifications with master instructors.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-wrap"><i class="fas fa-umbrella-beach"></i></div>
+            <h3>Private Beach Haven</h3>
+            <p>Secluded white sand reserve with sun loungers, towel attendants, and seaside refreshments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms & Suites Section (Carousel) -->
+    <section class="rooms-section section-padding" id="rooms">
+      <div class="container">
+        <div class="rooms-section-header-wrap">
+          <div class="section-header left-aligned">
+            <span class="section-subtitle">Comfort & Elegance</span>
+            <h2 class="section-title">Rooms & Suites</h2>
+            <p class="section-desc">Each accommodation is crafted with natural hardwood textures, plush bedding, and private panoramic vistas.</p>
+          </div>
+          <div class="rooms-carousel-nav">
+            <button type="button" class="carousel-nav-btn rooms-prev-btn" aria-label="Previous Suites">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button type="button" class="carousel-nav-btn rooms-next-btn" aria-label="Next Suites">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="rooms-carousel-wrapper">
+          <div class="rooms-carousel-track-container">
+            <div class="rooms-carousel-track">
+          <!-- Room 1 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="r1.jpg" alt="Superior Double Room">
+              <span class="room-badge">Popular Choice</span>
+            </div>
+            <div class="room-body">
+              <div class="room-meta">
+                <span><i class="fas fa-vector-square"></i> 38 m²</span>
+                <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                <span><i class="fas fa-bed"></i> King Bed</span>
+              </div>
+              <h3 class="room-title">Superior Double Room</h3>
+              <p class="room-desc">Generously proportioned with sweeping coastal views, plush Egyptian cotton linens, and a marble bath with rainfall shower.</p>
+              
+              <div class="room-amenities-tags">
+                <span class="room-tag">Ocean View</span>
+                <span class="room-tag">Free High-Speed Wi-Fi</span>
+                <span class="room-tag">Espresso Bar</span>
+              </div>
+
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price-val"><small>$</small>149</span>
+                  <span class="price-period">per night (taxes incl.)</span>
+                </div>
+                <button type="button" class="btn btn-primary" data-book-room="room-1" style="padding: 10px 18px; font-size: 0.8rem;">
+                  Book Suite
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 2 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="r2.jpg" alt="Executive Garden Suite">
+              <span class="room-badge">Best Seller</span>
+            </div>
+            <div class="room-body">
+              <div class="room-meta">
+                <span><i class="fas fa-vector-square"></i> 54 m²</span>
+                <span><i class="fas fa-user-friends"></i> 3 Guests</span>
+                <span><i class="fas fa-bed"></i> California King</span>
+              </div>
+              <h3 class="room-title">Executive Garden Suite</h3>
+              <p class="room-desc">An elegant personal sanctuary featuring a private garden terrace, separate lounge space, and complimentary evening aperitifs.</p>
+              
+              <div class="room-amenities-tags">
+                <span class="room-tag">Garden Terrace</span>
+                <span class="room-tag">Deep Soaking Tub</span>
+                <span class="room-tag">Butler Call</span>
+              </div>
+
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price-val"><small>$</small>239</span>
+                  <span class="price-period">per night (taxes incl.)</span>
+                </div>
+                <button type="button" class="btn btn-primary" data-book-room="room-2" style="padding: 10px 18px; font-size: 0.8rem;">
+                  Book Suite
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 3 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="r3.jpg" alt="Presidential Ocean Suite">
+              <span class="room-badge">Signature Luxury</span>
+            </div>
+            <div class="room-body">
+              <div class="room-meta">
+                <span><i class="fas fa-vector-square"></i> 85 m²</span>
+                <span><i class="fas fa-user-friends"></i> 4 Guests</span>
+                <span><i class="fas fa-bed"></i> 2 King Beds</span>
+              </div>
+              <h3 class="room-title">Presidential Ocean Suite</h3>
+              <p class="room-desc">Our premier penthouse suite offering 180° panoramic ocean vistas, dedicated butler service, and private jacuzzi lounge.</p>
+              
+              <div class="room-amenities-tags">
+                <span class="room-tag">Private Jacuzzi</span>
+                <span class="room-tag">180° Ocean View</span>
+                <span class="room-tag">VIP Airport Chauffeur</span>
+              </div>
+
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price-val"><small>$</small>389</span>
+                  <span class="price-period">per night (taxes incl.)</span>
+                </div>
+                <button type="button" class="btn btn-primary" data-book-room="room-3" style="padding: 10px 18px; font-size: 0.8rem;">
+                  Book Suite
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 4 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="home1.jpg" alt="Deluxe Oceanfront Villa">
+              <span class="room-badge">Exclusive Villa</span>
+            </div>
+            <div class="room-body">
+              <div class="room-meta">
+                <span><i class="fas fa-vector-square"></i> 110 m²</span>
+                <span><i class="fas fa-user-friends"></i> 4 Guests</span>
+                <span><i class="fas fa-swimming-pool"></i> Plunge Pool</span>
+              </div>
+              <h3 class="room-title">Deluxe Oceanfront Villa</h3>
+              <p class="room-desc">A standalone seaside villa with its own infinity plunge pool, private sundeck, outdoor shower, and private chef service.</p>
+              
+              <div class="room-amenities-tags">
+                <span class="room-tag">Private Plunge Pool</span>
+                <span class="room-tag">Direct Beach Access</span>
+                <span class="room-tag">Personal Chef</span>
+              </div>
+
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price-val"><small>$</small>499</span>
+                  <span class="price-period">per night (taxes incl.)</span>
+                </div>
+                <button type="button" class="btn btn-primary" data-book-room="room-4" style="padding: 10px 18px; font-size: 0.8rem;">
+                  Book Suite
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 5 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="home2.jpg" alt="Honeymoon Garden Sanctuary">
+              <span class="room-badge">Romantic Getaway</span>
+            </div>
+            <div class="room-body">
+              <div class="room-meta">
+                <span><i class="fas fa-vector-square"></i> 62 m²</span>
+                <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                <span><i class="fas fa-bed"></i> Canopy King</span>
+              </div>
+              <h3 class="room-title">Honeymoon Garden Sanctuary</h3>
+              <p class="room-desc">Designed exclusively for romance, featuring secluded tropical foliage, a freestanding copper bath, and candlelit turndown rituals.</p>
+              
+              <div class="room-amenities-tags">
+                <span class="room-tag">Copper Soaking Tub</span>
+                <span class="room-tag">Champagne on Arrival</span>
+                <span class="room-tag">Private Patio</span>
+              </div>
+
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price-val"><small>$</small>289</span>
+                  <span class="price-period">per night (taxes incl.)</span>
+                </div>
+                <button type="button" class="btn btn-primary" data-book-room="room-5" style="padding: 10px 18px; font-size: 0.8rem;">
+                  Book Suite
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 6 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="home4.jpg" alt="Penthouse Sky Terrace">
+              <span class="room-badge">Ultra Luxury</span>
+            </div>
+            <div class="room-body">
+              <div class="room-meta">
+                <span><i class="fas fa-vector-square"></i> 140 m²</span>
+                <span><i class="fas fa-user-friends"></i> 6 Guests</span>
+                <span><i class="fas fa-glass-martini-alt"></i> Sky Lounge</span>
+              </div>
+              <h3 class="room-title">Penthouse Sky Terrace</h3>
+              <p class="room-desc">Commanding the top floor with wrap-around balconies, private rooftop solarium, cocktail lounge bar, and 24/7 dedicated concierge.</p>
+              
+              <div class="room-amenities-tags">
+                <span class="room-tag">Rooftop Solarium</span>
+                <span class="room-tag">Cocktail Lounge Bar</span>
+                <span class="room-tag">24/7 Concierge</span>
+              </div>
+
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price-val"><small>$</small>599</span>
+                  <span class="price-period">per night (taxes incl.)</span>
+                </div>
+                <button type="button" class="btn btn-primary" data-book-room="room-6" style="padding: 10px 18px; font-size: 0.8rem;">
+                  Book Suite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rooms-carousel-dots"></div>
+    </div>
+  </div>
+</section>
+
+    <!-- Culinary & Restaurant Section -->
+    <section class="restaurant-section section-padding" id="restaurant">
+      <div class="container">
+        <div class="restaurant-grid">
+          <div class="restaurant-visual">
+            <img src="re.jpg" alt="Fine Dining Experience at EaseStay">
+          </div>
+
+          <div class="restaurant-info">
+            <span class="section-subtitle">Exquisite Gastronomy</span>
+            <h2 class="section-title">Culinary Excellence at EaseStay</h2>
+            <p>Embark on an artisanal culinary journey featuring sustainably harvested local produce, freshly caught seafood, and curated international vintages.</p>
+
+            <div class="accordionWrapper">
+              <!-- Item 1 -->
+              <div class="accordionItem open">
+                <div class="accordionIHeading" aria-expanded="true">
+                  <span><i class="fas fa-utensils"></i> La Terrazza Italiana</span>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordionItemContent">
+                  <p>Handcrafted pasta, wood-fired Neapolitan pizzas, and Tuscan reserve wines served on our romantic cliffside terrace under the stars.</p>
+                  <div class="cuisine-details">
+                    <span><i class="far fa-clock"></i> 6:00 PM - 11:00 PM</span>
+                    <span><i class="fas fa-wine-glass-alt"></i> Sommelier Curated</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="accordionItem close">
+                <div class="accordionIHeading" aria-expanded="false">
+                  <span><i class="fas fa-pepper-hot"></i> Cantina Del Sol</span>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordionItemContent">
+                  <p>Vibrant coastal Mexican cuisine featuring flame-grilled snapper, artisan tacos, and an award-winning collection of rare mezcals and tequilas.</p>
+                  <div class="cuisine-details">
+                    <span><i class="far fa-clock"></i> 12:00 PM - 10:30 PM</span>
+                    <span><i class="fas fa-cocktail"></i> Craft Tequila Bar</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="accordionItem close">
+                <div class="accordionIHeading" aria-expanded="false">
+                  <span><i class="fas fa-coffee"></i> Le Ciel Patisserie & Café</span>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordionItemContent">
+                  <p>Buttery French pastries, bespoke chocolates, and single-origin specialty coffees brewed fresh each morning by our master baristas.</p>
+                  <div class="cuisine-details">
+                    <span><i class="far fa-clock"></i> 7:00 AM - 6:00 PM</span>
+                    <span><i class="fas fa-bread-slice"></i> Fresh Daily Bakes</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="accordionItem close">
+                <div class="accordionIHeading" aria-expanded="false">
+                  <span><i class="fas fa-fish"></i> Sunset Seafood & Oyster Bar</span>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordionItemContent">
+                  <p>Chilled ocean oysters, whole grilled lobster, and signature cocktails served with uninterrupted sunset views directly over the marina.</p>
+                  <div class="cuisine-details">
+                    <span><i class="far fa-clock"></i> 4:00 PM - 12:00 AM</span>
+                    <span><i class="fas fa-music"></i> Live Jazz Trio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / People Say -->
+    <section class="testimonial-section section-padding">
+      <div class="container">
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+          <p class="testimonial-text">"EaseStay exceeded every single expectation. The attention to detail, breathtaking oceanfront views, and genuinely caring team made our anniversary getaway the most memorable vacation we've ever experienced."</p>
+          <div class="testimonial-author">
+            <img src="c.jpg" alt="Kate Palmer" class="author-avatar">
+            <div class="author-info">
+              <h4>Kate Palmer</h4>
+              <p>Verified Guest &bull; Idaho, USA</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Visual Journey</span>
+          <h2 class="section-title">Resort Photo Gallery</h2>
+          <p class="section-desc">Click any photo to explore our high-resolution interactive preview gallery.</p>
+        </div>
+
+        <!-- Interactive Category Filters -->
+        <div class="gallery-filter-bar">
+          <button type="button" class="gallery-filter-btn active" data-filter="all">All Moments</button>
+          <button type="button" class="gallery-filter-btn" data-filter="rooms">Suites & Rooms</button>
+          <button type="button" class="gallery-filter-btn" data-filter="leisure">Pool, Spa & Beach</button>
+          <button type="button" class="gallery-filter-btn" data-filter="dining">Fine Dining & Lounge</button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="leisure" data-title="Infinity Coastal Pool & Cabanas">
+            <img src="g1.jpg" alt="Infinity Coastal Pool & Cabanas">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Infinity Pool & Cabanas</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="rooms" data-title="Executive Master Suite Living Space">
+            <img src="g2.jpg" alt="Executive Master Suite Living Space">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Executive Suite</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leisure" data-title="Secluded White Sand Beachfront">
+            <img src="g3.jpg" alt="Secluded White Sand Beachfront">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Private White Sand Beach</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="dining" data-title="Artisan Dining & Sunset Lounge">
+            <img src="g4.jpg" alt="Artisan Dining & Sunset Lounge">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Sunset Dining Terrace</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leisure" data-title="Thalasso Spa & Hydrotherapy Pool">
+            <img src="g5.jpg" alt="Thalasso Spa & Hydrotherapy Pool">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Thalasso Mineral Spa</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="dining" data-title="Oceanfront Evening Lounge Bar">
+            <img src="g6.jpg" alt="Oceanfront Evening Lounge Bar">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Cocktail Lounge Bar</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leisure" data-title="Tropical Botanical Walkway & Gardens">
+            <img src="g7.jpg" alt="Tropical Botanical Walkway & Gardens">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Botanical Gardens Walk</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="rooms" data-title="Panoramic Ocean Horizon View">
+            <img src="g8.jpg" alt="Panoramic Ocean Horizon View">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Penthouse Ocean Horizon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section class="contact-section section-padding" id="contact" style="padding-top: 0;">
+      <div class="container">
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1637755481449!5m2!1sen!2snp" 
+            allowfullscreen="" 
+            loading="lazy" 
+            title="EaseStay Resort Location">
+          </iframe>
+
+          <div class="contact-overlay-card">
+            <h3>Visit EaseStay</h3>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>3015 Grand Avenue, Coconut Grove, Merrick Way, FL 33133</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>concierge@easestayhotel.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (800) 456-7890 &bull; +1 (305) 555-0199</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <span>24/7 Front Desk & Valet Concierge</span>
+            </div>
+            <a href="#booking" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Reserve Your Stay</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="brand-text" style="margin-bottom: 16px;">EASE<span>STAY</span></div>
+          <p>Where architectural mastery meets unmatched hospitality. Nestled along the tranquil coast, EaseStay provides world-class accommodations, accessible stays, and restorative escapes for travelers worldwide.</p>
+          <div class="payment-methods">
+            <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+            <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+            <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" alt="PayPal">
+            <img src="https://img.icons8.com/fluency/48/000000/amex.png" alt="American Express">
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#about">About Our Resort</a></li>
+            <li><a href="#rooms">Rooms & Suites</a></li>
+            <li><a href="#amenities">Resort Amenities</a></li>
+            <li><a href="#restaurant">Gourmet Dining</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Guest Services</h3>
+          <ul class="footer-links">
+            <li><a href="#contact">Airport Transfers</a></li>
+            <li><a href="#contact">Accessibility Inquiries</a></li>
+            <li><a href="#contact">Private Events & Weddings</a></li>
+            <li><a href="#contact">Corporate Retreats</a></li>
+            <li><a href="#contact">Terms & Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>Subscribe to receive seasonal promotions, culinary invitations, and exclusive suite upgrades.</p>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary" style="padding: 10px 18px;"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 EaseStay Hotel & Resort. All rights reserved.</p>
+        <p>Built with modern TypeScript & CSS design.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Photo Gallery Lightbox Modal -->
+  <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <div class="lightbox-content-wrap">
+      <button type="button" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous Photo"><i class="fas fa-chevron-left"></i></button>
+      <button type="button" class="lightbox-nav lightbox-next" aria-label="Next Photo"><i class="fas fa-chevron-right"></i></button>
+
+      <div class="lightbox-img-box">
+        <img id="lightboxImg" src="" alt="Resort Preview">
+      </div>
+
+      <div class="lightbox-caption-bar">
+        <h4 id="lightboxTitle">Resort Photo</h4>
+        <span class="lightbox-counter" id="lightboxCounter">1 of 8</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking Details Modal -->
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalTitle"><i class="fas fa-concierge-bell" style="color: var(--primary-gold); margin-right: 8px;"></i> Complete Your Reservation</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Dynamically populated by BookingEngine -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container (managed by TypeScript) -->
+  <div id="toast-container"></div>
+
+  <!-- Main JavaScript (compiled from main.ts) -->
+  <script src="main.js"></script>
+</body>
+</html>
